@@ -31,6 +31,7 @@ Route::get('makanan', 'ProdukController@makanan');
 Route::get('minuman', 'ProdukController@minuman');
 Route::get('kesehatan', 'ProdukController@kesehatan');
 Route::get('krt', 'ProdukController@krt');
+Route::get('pesanan/{id}', 'PesananController@getPesanansByUser');
 Route::post('pesanan', 'PesananController@store');
 Route::get('kurir', 'UserController@getAllKurir');
 
